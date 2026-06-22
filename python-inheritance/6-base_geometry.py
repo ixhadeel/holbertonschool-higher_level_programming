@@ -14,4 +14,3 @@ class BaseGeometry:
         This method will raise an error because it is not built yet.
         """
         raise Exception("area() is not implemented")
-    
