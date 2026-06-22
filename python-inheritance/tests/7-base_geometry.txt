@@ -1,0 +1,37 @@
+This is the test file for our updated BaseGeometry class.
+We are going to check if the integer validator works nicely.
+
+First, let us get our class from the module:
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> bg = BaseGeometry()
+
+Test 1: Valid integers (Should pass completely with no errors)
+---------------------------------------------------------------
+    >>> bg.integer_validator("width", 10)
+    >>> bg.integer_validator("height", 25)
+
+Test 2: If the value is not an integer (Should raise TypeError)
+---------------------------------------------------------------
+    >>> bg.integer_validator("age", "twelve")
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+
+    >>> bg.integer_validator("status", True)
+    Traceback (most recent call last):
+    ...
+    TypeError: status must be an integer
+
+Test 3: If the value is 0 or negative (Should raise ValueError)
+---------------------------------------------------------------
+    >>> bg.integer_validator("size", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: size must be greater than 0
+
+    >>> bg.integer_validator("distance", -5)
+    Traceback (most recent call last):
+    ...
+    ValueError: distance must be greater than 0
+    
