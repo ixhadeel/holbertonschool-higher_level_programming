@@ -1,0 +1,62 @@
+===============================
+The ``2-matrix_divided`` Module
+===============================
+
+Using the ``matrix_divided`` function
+-------------------------------------
+
+First, import the function from the module:
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test standard matrix division with integers:
+    >>> matrix = [[1, 2, 3], [4, 5, 6]]
+    >>> matrix_divided(matrix, 3)
+    [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+Verify that the original matrix was not modified:
+    >>> matrix
+    [[1, 2, 3], [4, 5, 6]]
+
+Test with floats in matrix and a float divisor:
+    >>> matrix_divided([[1.5, 2.5], [3.5, 4.5]], 0.5)
+    [[3.0, 5.0], [7.0, 9.0]]
+
+Test exceptions for invalid matrix type (not list of lists):
+    >>> matrix_divided([1, 2, 3], 3)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix_divided([[1, 2], "not a list"], 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test exceptions for row size mismatches:
+    >>> matrix_divided([[1, 2, 3], [4, 5]], 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: Each row of the matrix must have the same size
+
+Test exceptions for invalid div type:
+    >>> matrix_divided([[1, 2], [3, 4]], "School")
+    Traceback (most recent call last):
+        ...
+    TypeError: div must be a number
+
+Test division by zero:
+    >>> matrix_divided([[1, 2], [3, 4]], 0)
+    Traceback (most recent call last):
+        ...
+    ZeroDivisionError: division by zero
+
+Test with NaN or Infinity values inside matrix or as div:
+    >>> matrix_divided([[1, float('nan')], [3, 4]], 2)
+    Traceback (most recent call last):
+        ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+    >>> matrix_divided([[1, 2], [3, 4]], float('inf'))
+    Traceback (most recent call last):
+        ...
+    TypeError: div must be a number

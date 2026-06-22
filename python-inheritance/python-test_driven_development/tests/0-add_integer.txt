@@ -1,0 +1,64 @@
+===============================
+The ``0-add_integer`` Module
+===============================
+
+Using the ``add_integer`` function
+----------------------------------
+
+First, import the function from the module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Test standard addition with integers:
+    >>> add_integer(1, 2)
+    3
+
+Test with negative numbers:
+    >>> add_integer(100, -2)
+    98
+
+Test using the default value for b (which is 98):
+    >>> add_integer(2)
+    100
+
+Test with floats (should be casted to integers first):
+    >>> add_integer(100.3, -2)
+    98
+
+    >>> add_integer(2.9, 2.9)
+    4
+
+Test with large integers:
+    >>> add_integer(1000000, 2000000)
+    3000000
+
+Test exceptions when arguments are not integers or floats:
+    >>> add_integer(4, "School")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+    >>> add_integer("School", 4)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(None)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(4, [1, 2])
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
+
+Test float overflow (Infinity) and NaN cases:
+    >>> add_integer(float('inf'), 4)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+    >>> add_integer(4, float('nan'))
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
