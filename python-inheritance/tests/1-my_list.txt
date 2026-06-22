@@ -1,0 +1,31 @@
+This is the test file for the MyList class project.
+In this test, we are checking if the list prints elements correctly and sorted.
+
+First, let us fetch the class from the module without using the forbidden words:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Now, we can create a new list object and add some numbers to it:
+
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    >>> my_list.append(4)
+    >>> my_list.append(2)
+    >>> my_list.append(3)
+    >>> my_list.append(5)
+
+Let us see if the list prints normally in the same order we added the numbers:
+
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
+Now, we will call the method that should show us the numbers sorted ascendingly:
+
+    >>> my_list.print_sorted()
+    [1, 2, 3, 4, 5]
+
+Finally, we must check that our original list did not change at all:
+
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+    
