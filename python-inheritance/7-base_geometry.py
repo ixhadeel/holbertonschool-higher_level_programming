@@ -15,7 +15,7 @@ class BaseGeometry:
         """
         raise Exception("area() is not implemented")
 
-    def integer_validator(self, name, value):
+    def integer_validator(self, name, value=None):
         """
         This method checks if the value is a valid positive integer.
         """
