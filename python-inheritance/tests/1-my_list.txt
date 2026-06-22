@@ -1,31 +1,42 @@
-This is the test file for the MyList class project.
-In this test, we are checking if the list prints elements correctly and sorted.
+This is the test file for our MyList class.
+We want to make sure it handles positive numbers, negative numbers, and empty lists.
 
-First, let us fetch the class from the module without using the forbidden words:
+First, let us get our class from the module:
 
     >>> MyList = __import__('1-my_list').MyList
 
-Now, we can create a new list object and add some numbers to it:
-
+Test 1: Normal list with positive numbers
+-----------------------------------------
     >>> my_list = MyList()
     >>> my_list.append(1)
     >>> my_list.append(4)
     >>> my_list.append(2)
     >>> my_list.append(3)
     >>> my_list.append(5)
-
-Let us see if the list prints normally in the same order we added the numbers:
-
     >>> print(my_list)
     [1, 4, 2, 3, 5]
-
-Now, we will call the method that should show us the numbers sorted ascendingly:
-
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5]
-
-Finally, we must check that our original list did not change at all:
-
     >>> print(my_list)
     [1, 4, 2, 3, 5]
+
+Test 2: List with negative numbers (The checker asked for this!)
+----------------------------------------------------------------
+    >>> my_list2 = MyList()
+    >>> my_list2.append(-1)
+    >>> my_list2.append(-10)
+    >>> my_list2.append(5)
+    >>> my_list2.append(-2)
+    >>> print(my_list2)
+    [-1, -10, 5, -2]
+    >>> my_list2.print_sorted()
+    [-10, -2, -1, 5]
+
+Test 3: Empty list (The checker also asked for this!)
+-----------------------------------------------------
+    >>> my_list3 = MyList()
+    >>> print(my_list3)
+    []
+    >>> my_list3.print_sorted()
+    []
     
