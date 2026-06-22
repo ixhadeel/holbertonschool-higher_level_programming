@@ -1,4 +1,4 @@
-      #!/usr/bin/python3
+#!/usr/bin/python3
 """
 This is a geometry module where we validate data types.
 """
@@ -19,8 +19,7 @@ class BaseGeometry:
         """
         This method checks if the value is a valid positive integer.
         """
-        if type(value) is not int or type(value) is bool:
+        if type(value) is bool or type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
-        
