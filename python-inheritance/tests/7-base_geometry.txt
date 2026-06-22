@@ -3,7 +3,7 @@ We are going to check if the integer validator works nicely.
 
 First, let us get our class from the module:
 
-    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
     >>> bg = BaseGeometry()
 
 Test 1: Valid integers
@@ -56,3 +56,4 @@ Test 4: If the value is 0 or negative
     Traceback (most recent call last):
     ...
     ValueError: distance must be greater than 0
+    
