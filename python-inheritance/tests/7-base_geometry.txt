@@ -3,7 +3,7 @@ We are going to check if the integer validator works nicely.
 
 First, let us get our class from the module:
 
-    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
     >>> bg = BaseGeometry()
 
 Test 1: Valid integers
@@ -11,8 +11,8 @@ Test 1: Valid integers
     >>> bg.integer_validator("width", 10)
     >>> bg.integer_validator("height", 25)
 
-Test 2: If the value is not an integer (Checking strings and booleans)
-----------------------------------------------------------------------
+Test 2: If the value is not an integer
+--------------------------------------
     >>> bg.integer_validator("age", "twelve")
     Traceback (most recent call last):
     ...
@@ -23,8 +23,8 @@ Test 2: If the value is not an integer (Checking strings and booleans)
     ...
     TypeError: status must be an integer
 
-Test 3: Checking complex data types (The checker explicitly asked for these!)
------------------------------------------------------------------------------
+Test 3: Checking complex data types
+-----------------------------------
     >>> bg.integer_validator("age", (4,))
     Traceback (most recent call last):
     ...
@@ -56,4 +56,3 @@ Test 4: If the value is 0 or negative
     Traceback (most recent call last):
     ...
     ValueError: distance must be greater than 0
-    
