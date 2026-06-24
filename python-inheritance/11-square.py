@@ -7,7 +7,7 @@ Rectangle = __import__('9-rectangle').Rectangle
 
 class Square(Rectangle):
     """
-    This class defines a square and handles its size, area, and printing format.
+    This class defines a square and handles its size and printing.
     """
 
     def __init__(self, size):
