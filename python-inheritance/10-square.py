@@ -23,4 +23,3 @@ class Square(Rectangle):
         Calculates and returns the total area of the square.
         """
         return self.__size ** 2
-    
