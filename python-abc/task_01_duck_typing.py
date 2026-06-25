@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Module for testing abstract base classes and duck typing.
+Module defining Shape abstract class, Circle, Rectangle, and shape_info.
 """
-import math
 from abc import ABC, abstractmethod
+import math
 
 
 class Shape(ABC):
-    """Abstract class representing a geometric shape."""
+    """Abstract base class for geometric shapes."""
 
     @abstractmethod
     def area(self):
@@ -21,10 +21,10 @@ class Shape(ABC):
 
 
 class Circle(Shape):
-    """Circle class that inherits from Shape."""
+    """Class representing a circle."""
 
     def __init__(self, radius):
-        """Initialize circle with a radius."""
+        """Initialize Circle with radius."""
         self.radius = radius
 
     def area(self):
@@ -37,10 +37,10 @@ class Circle(Shape):
 
 
 class Rectangle(Shape):
-    """Rectangle class that inherits from Shape."""
+    """Class representing a rectangle."""
 
     def __init__(self, width, height):
-        """Initialize rectangle with width and height."""
+        """Initialize Rectangle with width and height."""
         self.width = width
         self.height = height
 
@@ -55,5 +55,5 @@ class Rectangle(Shape):
 
 def shape_info(shape):
     """Print the area and perimeter of a shape using duck typing."""
-    print("Area: {}".format(shape.area()), end="")
-    print("Perimeter: {}".format(shape.perimeter()), end="")
+    print("Area: {}".format(shape.area()))
+    print("Perimeter: {}".format(shape.perimeter()))
