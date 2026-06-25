@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 """
-Module defining Shape abstract class, Circle, Rectangle, and shape_info.
+Module for testing abstract base classes and duck typing.
 """
 from abc import ABC, abstractmethod
 import math
 
 
 class Shape(ABC):
-    """Abstract base class for geometric shapes."""
+    """Abstract class representing a geometric shape."""
 
     @abstractmethod
     def area(self):
@@ -21,10 +21,10 @@ class Shape(ABC):
 
 
 class Circle(Shape):
-    """Class representing a circle."""
+    """Circle class that inherits from Shape."""
 
     def __init__(self, radius):
-        """Initialize Circle with radius."""
+        """Initialize circle with a radius."""
         self.radius = radius
 
     def area(self):
@@ -37,10 +37,10 @@ class Circle(Shape):
 
 
 class Rectangle(Shape):
-    """Class representing a rectangle."""
+    """Rectangle class that inherits from Shape."""
 
     def __init__(self, width, height):
-        """Initialize Rectangle with width and height."""
+        """Initialize rectangle with width and height."""
         self.width = width
         self.height = height
 
