@@ -13,9 +13,10 @@ class CustomObject:
     Provides methods to display, serialize, and deserialize its data.
     """
 
-    def __init__(self, name: str, age: int, is_student: bool):
+    def __init__(self, name, age, is_student):
         """
         Initializes a new instance of CustomObject with basic attributes.
+        This constructor sets up the initial values for the instance.
         """
         self.name = name
         self.age = age
@@ -24,7 +25,7 @@ class CustomObject:
     def display(self):
         """
         Prints the attributes of the object in the exact expected format.
-        Each attribute is displayed on a separate line.
+        Each attribute is displayed on a separate line for clarity.
         """
         print("Name: {}".format(self.name))
         print("Age: {}".format(self.age))
@@ -38,7 +39,7 @@ class CustomObject:
         try:
             with open(filename, 'wb') as f:
                 pickle.dump(self, f)
-        except (OSError, pickle.PickleError):
+        except Exception:
             return None
 
     @classmethod
@@ -50,5 +51,5 @@ class CustomObject:
         try:
             with open(filename, 'rb') as f:
                 return pickle.load(f)
-        except (OSError, pickle.PickleError):
+        except Exception:
             return None
