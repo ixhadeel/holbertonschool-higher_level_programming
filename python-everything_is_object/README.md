@@ -92,3 +92,7 @@
 
 - `()` creates an empty tuple.
 - Therefore, `a` is a tuple.
+## Task 21 - Tuple or not?
+
+- `(1, 2)` creates a tuple with two elements.
+- Therefore, `a` is a tuple.
