@@ -11,3 +11,7 @@
 
 - In CPython, small integers are cached and reused.
 - Since both `a` and `b` are assigned the value `89`, they point to the same object.
+## Task 4 - Right count =
+
+- `b = a` makes `b` reference the same object as `a`.
+- Assignment does not create a new copy of the object.
