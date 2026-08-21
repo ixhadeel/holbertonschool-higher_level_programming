@@ -32,3 +32,8 @@
 
 - `==` compares values, not object identity.
 - Both strings have the same value, so the result is `True`.
+## Task 9 - Is really the same
+
+- `is` checks object identity, not value equality.
+- `s1` and `s2` have the same value, but they are not the same object in this example.
+- Use `==` when comparing string values, not `is`.
