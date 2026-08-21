@@ -119,3 +119,8 @@
 - `()` creates an empty tuple.
 - CPython reuses the same empty tuple object.
 - Therefore, `a is b` is `True`.
+## Task 27 - Still the same?
+
+- `a + [5]` creates a new list object.
+- `a` is reassigned to that new list.
+- Therefore, the object's `id` changes.
