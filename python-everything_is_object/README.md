@@ -19,3 +19,8 @@
 
 - `b = a + 1` creates a result with a different value.
 - `a` points to `89`, while `b` points to `90`, so they do not reference the same object.
+
+## Task 6 - Is equal
+
+- `==` checks whether two objects have the same value.
+- Here, `s1` and `s2` contain the same string, so `s1 == s2` is `True`.
