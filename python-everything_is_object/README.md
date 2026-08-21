@@ -124,3 +124,8 @@
 - `a + [5]` creates a new list object.
 - `a` is reassigned to that new list.
 - Therefore, the object's `id` changes.
+## Task 28 - Same or not?
+
+- For lists, `+=` modifies the existing list in place.
+- The list object remains the same, so its `id` does not change.
+- Therefore, the answer is `Yes`.
