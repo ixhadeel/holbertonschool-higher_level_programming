@@ -41,3 +41,8 @@
 
 - `==` compares the contents of lists.
 - Both lists contain the same elements in the same order, so the result is `True`.
+## Task 11 - And with a list, is it the same
+
+- `is` checks whether two variables reference the exact same object.
+- `l1` and `l2` have the same contents, but they are two different list objects.
+- Therefore, `l1 is l2` is `False`.
