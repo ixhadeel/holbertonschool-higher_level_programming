@@ -88,3 +88,7 @@
 - `a_list[:]` creates a shallow copy of the list.
 - The new list has the same contents, so `new_list == a_list` is `True`.
 - It is a different object, so `new_list is a_list` is `False`.
+## Task 20 - Tuple or not?
+
+- `()` creates an empty tuple.
+- Therefore, `a` is a tuple.
