@@ -96,3 +96,7 @@
 
 - `(1, 2)` creates a tuple with two elements.
 - Therefore, `a` is a tuple.
+## Task 22 - Tuple or not?
+
+- `(1)` is not a tuple; it is just the integer `1` inside parentheses.
+- A one-element tuple needs a comma: `(1,)`.
