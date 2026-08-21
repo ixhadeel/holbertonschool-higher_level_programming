@@ -15,3 +15,7 @@
 
 - `b = a` makes `b` reference the same object as `a`.
 - Assignment does not create a new copy of the object.
+## Task 5 - Right count =+
+
+- `b = a + 1` creates a result with a different value.
+- `a` points to `89`, while `b` points to `90`, so they do not reference the same object.
