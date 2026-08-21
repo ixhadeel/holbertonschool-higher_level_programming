@@ -46,3 +46,7 @@
 - `is` checks whether two variables reference the exact same object.
 - `l1` and `l2` have the same contents, but they are two different list objects.
 - Therefore, `l1 is l2` is `False`.
+## Task 12 - And with a list, is it really equal
+
+- `l2 = l1` makes both variables reference the same list.
+- Since `==` compares list contents, `l1 == l2` is `True`.
