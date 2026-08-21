@@ -83,3 +83,8 @@
 - `n = v` only changes what the local variable `n` references inside the function.
 - It does not modify the original list object.
 - Therefore, `l1` remains `[1, 2, 3]`.
+## Task 19 - Copy a list object
+
+- `a_list[:]` creates a shallow copy of the list.
+- The new list has the same contents, so `new_list == a_list` is `True`.
+- It is a different object, so `new_list is a_list` is `False`.
