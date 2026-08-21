@@ -28,3 +28,7 @@
 
 - `is` checks whether two variables reference the exact same object.
 - Since `s2 = s1`, both variables point to the same object, so the result is `True`.
+## Task 8 - Is really equal
+
+- `==` compares values, not object identity.
+- Both strings have the same value, so the result is `True`.
