@@ -104,3 +104,8 @@
 
 - `(1,)` is a tuple with one element.
 - The comma is what makes a one-element tuple.
+## Task 24 - Who I am?
+
+- `(1)` is an integer, not a tuple.
+- Small integers are reused by CPython.
+- Therefore, `a is b` is `True`.
