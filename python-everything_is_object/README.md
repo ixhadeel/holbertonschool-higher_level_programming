@@ -100,3 +100,7 @@
 
 - `(1)` is not a tuple; it is just the integer `1` inside parentheses.
 - A one-element tuple needs a comma: `(1,)`.
+## Task 23 - Tuple or not?
+
+- `(1,)` is a tuple with one element.
+- The comma is what makes a one-element tuple.
