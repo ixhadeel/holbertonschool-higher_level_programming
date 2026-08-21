@@ -7,3 +7,7 @@
 
 - Two variables can point to different objects even if both are integers.
 - Here, `a = 89` and `b = 100`, so they do not point to the same object.
+## Task 3 - Right count =
+
+- In CPython, small integers are cached and reused.
+- Since both `a` and `b` are assigned the value `89`, they point to the same object.
