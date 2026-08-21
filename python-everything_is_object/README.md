@@ -60,3 +60,10 @@
 - `l2 = l1` makes both variables reference the same list.
 - `append()` modifies that same list in place.
 - Therefore, changing `l1` also changes what `l2` sees.
+## Task 15 - List add
+
+- `l1 + [4]` creates a new list instead of modifying the existing list.
+- `l1` is reassigned to the new list `[1, 2, 3, 4]`.
+- `l2` still references the original list `[1, 2, 3]`.
+- Unlike `append()`, `+` does not mutate the original list.
+
