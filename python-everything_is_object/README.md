@@ -54,3 +54,9 @@
 
 - `l2 = l1` makes both variables reference the exact same list object.
 - `is` checks object identity, so `l1 is l2` is `True`.
+## Task 14 - List append
+
+- Lists are mutable objects.
+- `l2 = l1` makes both variables reference the same list.
+- `append()` modifies that same list in place.
+- Therefore, changing `l1` also changes what `l2` sees.
