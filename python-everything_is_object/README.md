@@ -72,3 +72,9 @@
 - Integers are immutable objects.
 - `n += 1` creates a new integer object inside the function.
 - The original variable `a` is not changed, so `print(a)` outputs `1`.
+## Task 17 - List incrementation
+
+- Lists are mutable objects.
+- The parameter `n` references the same list object as `l`.
+- `append(4)` modifies that list in place.
+- Therefore, the original list becomes `[1, 2, 3, 4]`.
