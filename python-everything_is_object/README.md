@@ -114,3 +114,8 @@
 - `(1, 2)` creates a tuple.
 - `a` and `b` have the same value, but they are different tuple objects.
 - Therefore, `a is b` is `False`.
+## Task 26 - Empty is not empty
+
+- `()` creates an empty tuple.
+- CPython reuses the same empty tuple object.
+- Therefore, `a is b` is `True`.
