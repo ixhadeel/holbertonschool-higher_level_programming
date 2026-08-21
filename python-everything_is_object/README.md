@@ -109,3 +109,8 @@
 - `(1)` is an integer, not a tuple.
 - Small integers are reused by CPython.
 - Therefore, `a is b` is `True`.
+## Task 25 - Tuple or not
+
+- `(1, 2)` is a tuple.
+- In this CPython script, the identical constant tuples can be reused as the same object.
+- Therefore, `a is b` evaluates to `True`.
