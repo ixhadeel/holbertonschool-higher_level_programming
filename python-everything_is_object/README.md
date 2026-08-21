@@ -50,3 +50,7 @@
 
 - `l2 = l1` makes both variables reference the same list.
 - Since `==` compares list contents, `l1 == l2` is `True`.
+## Task 13 - And with a list, is it really the same
+
+- `l2 = l1` makes both variables reference the exact same list object.
+- `is` checks object identity, so `l1 is l2` is `True`.
