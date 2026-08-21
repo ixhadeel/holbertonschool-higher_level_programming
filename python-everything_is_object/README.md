@@ -78,3 +78,8 @@
 - The parameter `n` references the same list object as `l`.
 - `append(4)` modifies that list in place.
 - Therefore, the original list becomes `[1, 2, 3, 4]`.
+## Task 18 - List assignation
+
+- `n = v` only changes what the local variable `n` references inside the function.
+- It does not modify the original list object.
+- Therefore, `l1` remains `[1, 2, 3]`.
