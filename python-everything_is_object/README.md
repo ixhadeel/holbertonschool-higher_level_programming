@@ -67,3 +67,8 @@
 - `l2` still references the original list `[1, 2, 3]`.
 - Unlike `append()`, `+` does not mutate the original list.
 
+## Task 16 - Integer incrementation
+
+- Integers are immutable objects.
+- `n += 1` creates a new integer object inside the function.
+- The original variable `a` is not changed, so `print(a)` outputs `1`.
